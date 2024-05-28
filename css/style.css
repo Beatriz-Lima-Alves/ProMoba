@@ -341,3 +341,173 @@ body {
 .card-black:hover .card-overlay {
     opacity: 1;
 }
+
+.title-container {
+    text-align: center;
+    margin-top: 8%; /* Ajuste este valor conforme necessário */
+
+}
+
+.centered-title {
+    display: inline-block;
+    position: relative;
+}
+
+.centered-title::after {
+    content: "";
+    display: block;
+    width: 110%; /* 100% + 2% antes + 2% depois */
+    height: 0.5%;
+    background-color: #ffffff;
+    position: absolute;
+    left: -5%; /* Move 2% para a esquerda */
+    bottom: -5px;
+}
+
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.description-container{
+    flex: 1;
+    margin: 10px;
+}
+
+.video-container {
+    box-shadow: 
+        0 4px 4px rgba(250, 81, 2, 0.25), /* Drop shadow */
+        inset 0 4px 4px rgba(250, 81, 2, 0.25); /* Inner shadow */
+        border-radius: 10px;
+    flex: 1;
+    margin: 10px;
+}
+
+.subtitle {
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Pontas arredondadas */
+}
+
+.text-center{
+    text-align: center;
+}
+
+.card-detail {
+    position: relative;
+    background-color: #000;
+    padding: 3%;
+    margin: 20px;
+    border-radius: 10px;
+    width: 25%; /* Para que dois cartões ocupem a largura disponível */
+    box-shadow: 
+        0 4px 4px rgba(250, 81, 2, 0.25), /* Drop shadow */
+        inset 0 4px 4px rgba(250, 81, 2, 0.25); /* Inner shadow */
+    color: #fff; /* Cor do texto para contrastar com o fundo */
+    text-align: center;
+    overflow: hidden; /* Para garantir que o conteúdo extra não saia do contêiner */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 170, 80, 0.02); /* Camada transparente de FF AA 50 com 3% de opacidade */
+    border-radius: 10px;
+    pointer-events: none; /* Para garantir que a camada não interfira na interação com o conteúdo */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Garante que o conteúdo fique sobre a camada transparente */
+}
+
+.card-detail h2 {
+    margin-top: 0;
+}
+
+.card-detail p {
+    margin-bottom: 0;
+}
+
+.cards-container-detail {
+    display: flex;
+    justify-content: center; /* Centraliza os cartões horizontalmente */
+    align-items: center; /* Centraliza os cartões verticalmente */
+    gap: 20px; /* Espaço entre os cartões */
+    width: 100%; /* Pode ser ajustado conforme necessário */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.t-2{
+    font-size: 2.0em;
+}
+
+.t-2-5{
+    font-size: 1.5em;
+}
+.t-3{
+    font-size: 3.0em;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    color: #fff; /* Cor do texto branco para contraste */
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Alinhar a segunda coluna à direita */
+td:last-child {
+    text-align: right;
+    font-weight: 600; /* Semi bold */
+}
+
+td:first-child {
+    font-weight: 800; /* Extra bold */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-button {
+    padding: 10px 20px;
+    background-color: #FF6E14; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.centered-button:hover {
+    background-color: #d4580b; /* Cor de fundo azul mais escura ao passar o mouse */
+}
