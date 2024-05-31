@@ -511,3 +511,8 @@ td:first-child {
 .centered-button:hover {
     background-color: #d4580b; /* Cor de fundo azul mais escura ao passar o mouse */
 }
+
+.no-underline {
+    text-decoration: none;
+    color: inherit;
+}
