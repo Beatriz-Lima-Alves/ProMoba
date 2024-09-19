@@ -512,6 +512,10 @@ td:first-child {
     background-color: #d4580b; /* Cor de fundo azul mais escura ao passar o mouse */
 }
 
+a.centered-button{
+    text-decoration: none;
+}
+
 .no-underline {
     text-decoration: none;
     color: inherit;
